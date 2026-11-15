@@ -1,1 +1,1 @@
-make a self driving car model 
+ secondly, making a management system
