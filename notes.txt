@@ -1,0 +1,3 @@
+these are notes for ict we would learn about git and github
+git is mainly used for maintaining history
+
