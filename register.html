@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer society - Register</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>|
+            <a href="events.html">Events</a>|
+            <a
+            href="register.html" >Register</a>
+            </nav>
+            <h1>Register</h1>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Society - Register</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.5; }
+    header, main, footer { padding: 16px 24px; }
+    header { background: #1f3a5f; color: #ffffff; }
+    nav a { color: #ffffff; margin-right: 16px; }
+    footer { background: #eeeeee; text-align: center; }
+    fieldset { margin-bottom: 16px; padding: 12px 16px; }
+    legend { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Member Registration</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- POST keeps the password out of the address bar.
+         enctype is needed so the profile photo file can be sent. -->
+    <form action="register.html" method="post" enctype="multipart/form-data">
+
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fullname">Full name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="name@example.com">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="03001234567">
+        <br><br>
+
+        <label for="website">Website (optional):</label>
+        <input type="url" id="website" name="website" placeholder="https://">
+        <br><br>
+
+        <label for="semester">Semester:</label>
+        <input type="number" id="semester" name="semester" min="1" max="8">
+        <br><br>
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob">
+      </fieldset>
+
+      <label for="colour">Favourite colour:</label>
+      <input type="color" id="colour" name="colour" value="#1f3a5f">
+      <br><br>
+
+      <label for="experience">Experience level:</label>
+      <input type="range" id="experience" name="experience" min="1" max="10" value="5">
+      <br><br>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        Gender:
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="dept">Department:</label>
+        <select id="dept" name="dept" multiple>
+          <option value="cs" selected>Computer Science</option>
+          <option value="se">Software Engineering</option>
+          <option value="ee">Electrical Engineering</option>
+          <option value="ai">Artificial Intelligence</option>
+        </select>
+        <small>(hold Ctrl, or Cmd on Mac, to choose more than one)</small>
+        <br><br>
+
+        Interests:
+        <input type="checkbox" id="web" name="interest" value="web">
+        <label for="web">Web</label>
+        <input type="checkbox" id="ai" name="interest" value="ai">
+        <label for="ai">AI</label>
+        <input type="checkbox" id="networking" name="interest" value="networking">
+        <label for="networking">Networking</label>
+        <input type="checkbox" id="gaming" name="interest" value="gaming">
+        <label for="gaming">Gaming</label>
+      </fieldset>
+
+      <label for="photo">Profile photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+      <br><br>
+
+      <label for="about">About you:</label><br>
+      <textarea id="about" name="about" rows="4" cols="40" maxlength="200"></textarea>
+      <br><br>
+
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Computer Society</p>
+  </footer>
+</body>
+</html>
+
+    </body>
+    </html>
